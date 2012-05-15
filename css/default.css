@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+/*
+===================================================================================================
+ Global setting
+---------------------------------------------------------------------------------------------------
+*/
+html,body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,table,tbody,tr,th,td,dl,dt,dd{
+	margin:0;
+	padding:0;
+}
+
+html{
+	overflow-y:scroll;
+}
+
+body{
+	background:#ccc;
+}
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+img{
+	border:0;
+}
+
+div#wrapper{
+	margin:0 auto;
+	background:#fff;
+	max-width:75em;
+	min-width:35em;
+}
+
+/*
+===================================================================================================
+ Header
+---------------------------------------------------------------------------------------------------
+*/
+
+div#header{
+	width:100%;
+	background-color:#B22222;
+	background-image:url(../image/header-bg.png);
+	background-repeat:repeat-x;
+	color:#ffffff;
+}
+
+div#header h1{
+	padding:0.3em 1.5em;
+	font-size:100%;
+}
+
+div#header a{
+	color:#ffffff;
+}
+
+div#header ul#breadcrumb{
+	display:inline;
+	font-weight:normal;
+	font-size:75%;
+}
+div#header ul#breadcrumb li{
+	display:inline;
+	margin-left:1em;
+}
+/*
+===================================================================================================
+ Global navi
+---------------------------------------------------------------------------------------------------
+*/
+
+div#globalnavi{
+	width:100%;
+	padding:0.3em 0;
+	background-color:#333;
+}
+
+#globalnavi ul{
+	text-align:center;
+}
+#globalnavi ul li{
+	padding:0 1em 0 1.5em;
+	display:inline;
+	border-left: 2px solid #999;
+	font-size:80%;
+}
+
+#globalnavi ul li#listfirst{
+	border-left:none;
+}
+
+div#globalnavi a{
+	color:#fff;
+}
+
+/*
+===================================================================================================
+ Footer
+---------------------------------------------------------------------------------------------------
+*/
+
+div#footer{
+	width:100%;
+	clear:both;
+	padding:0.3em 0;
+	background-color:#333;
+	color:#fff;
+	text-align:right;
+	font-size:80%;
+}
+
+#footer p{
+	margin:0 1em;
+	color:#bbb;
+}
+#footer a{
+	color:#ccf;
+}
+
+/*
+===================================================================================================
+ Content
+---------------------------------------------------------------------------------------------------
+*/
+div#content{
+	float:left;
+	width:100%;
+}
+
+
+/*
+===================================================================================================
+ Main
+---------------------------------------------------------------------------------------------------
+*/
+
+div#main{
+	float:left;
+	width:100%;
+}
+div#main .inner{
+	margin-left:15em;
+	padding:1em 1em 1em 3em;
+}
+
+
+div#main h2{
+	color:#B22;
+	margin:1.3em 0 1.3em 0;
+}
+div#main h2 a{
+	color:#B22;
+}
+
+div#main h3{
+	color:#B22;
+	margin:2em 0 0.5em -2em;
+	border:solid #B22222;
+	border-width:0 0 1px 0;
+	font-size:100%;
+}
+
+div#main div.main-header-links{
+}
+
+div#main div.main-header-links a{
+	padding: 0 0.5em 0 0.7em;
+	border:solid #bbb;
+	border-width:0 0 0 2px;
+}
+
+div#main div.main-footer-links{
+	text-align:right;
+	font-size:80%;
+}
+
+
+div#main pre#project-information{
+	font-size:80%;
+}
+
+/**
+ * main stats
+ */
+div#main dl.stats{
+}
+div#main dl.stats dt{
+	display:inline;
+	padding:0.1em 0.5em;
+	font-size:75%;
+	font-weight:bold;
+	background:#a86;
+	color:#fff;
+}
+div#main dl.stats dd{
+	display:inline;
+	margin-right:0.5em;
+	padding:0.1em 0.5em;
+	color:#853;
+
+}
+
+
+/**
+ * main notify-message
+ */
+
+div#main .inner ul#notify-message{
+	margin:1em auto;
+	max-width:30em;
+	min-width:15em;
+	padding:0.5em;
+	list-style-type: none;
+	border:2px dotted #000;
+	background:#ffd;
+	
+}
+
+div#main .inner ul#notify-message li.WARN{
+	color:#300;
+	font-weight: bold; 
+}
+
+/**
+ * main table-form
+ */
+
+div.table-form{
+	/*
+	max-width:40em;
+	min-width:15em;
+	*/
+	width:100%;
+	margin:1em auto;
+	background:#eee;
+	border:1px solid #ccc;
+}
+
+div.table-form form{
+	margin:0.5em;
+}
+
+div.table-form table{
+	width:100%;
+}
+div.table-form table th{
+	max-width:9em;
+	min-width:6em;
+	padding:0.2em 0.5em;
+	font-size:80%;
+	text-align:right;
+}
+
+div.table-form table td{
+}
+div.table-form table td input.textinput{
+	width:98%;
+}
+div.table-form table td input.fileinput{
+	width:98%;
+}
+div.table-form table td select{
+}
+div.table-form table td textarea.large{
+	width:98.5%;
+	height:20em;
+}
+div.table-form table td textarea.small{
+	width:98%;
+	height:5em;
+}
+div.table-form table td.submitarea{
+	text-align:center;
+	padding:1em 0 0.5em 0;
+}
+div.table-form table td.submitarea input{
+	width:10em;
+}
+
+/**
+ * category-picker
+ */
+ul.category-picker{
+	list-style-type:none;
+}
+
+ul.category-picker li{
+	display:inline;
+	font-size:80%;
+}
+
+ul.category-picker li a{
+	color:#000;
+}
+/**
+ * main ticket
+ */
+
+div.ticket{
+	/*
+	max-width:40em;
+	min-width:15em;
+	*/
+	width:100%;
+	margin:1em auto;
+	border:1px solid #ccc;
+}
+
+div.ticket p{
+	margin:0.5em;
+	font-size:85%;
+}
+div.ticket dl{
+	float:right;
+	width:35%;
+	background:#eee;
+}
+div.ticket dl dt{
+	width:80%;
+	margin:0.5em 0 0 1.2em;
+	border:solid #aaa;
+	border-width:0 0 1px 0;
+	font-size:75%;
+	font-weight:bold;
+	color:#777;
+}
+div.ticket dl dd{
+	/*margin:0 1em 0.5em 1em;*/
+	margin:0 1em 0.5em 2em;
+	font-size:85%;
+}
+div.ticket br.clear{
+	margin:0;
+	padding:0;
+	clear:both;
+}
+
+/**
+ * ticket-list
+ */
+table.ticket-list{
+	margin:1em auto;
+	width:100%;
+	border:solid #ccc;
+	border-collapse:collapse;
+	border-width:1px 0 0 0;
+}
+table.ticket-list th{
+	padding:0.2em 0.5em;
+	background:#eee;
+	font-size:75%;
+	border:solid #ccc;
+	border-width:0 0 1px 0;
+}
+table.ticket-list td{
+	padding:0.2em 0.5em;
+	font-size:80%;
+	border:solid #ccc;
+	border-width:0 0 1px 0;
+}
+table.ticket-list td.right{
+	text-align:right;
+}
+
+table.ticket-list td.caption{
+	font-weight:bold;
+	font-size:100%;
+	color:#a42;
+	padding:2em 0 0.2em 0.5em;
+}
+/**
+ * search
+ */
+div#main div.search-results{
+}
+
+div#main div.search-results ul{
+	list-style-type:none;
+}
+
+div#main div.search-results ul li{
+}
+
+div#main div.search-results ul li h4{
+	margin-top:1em;
+}
+
+div#main div.search-results ul li dl{
+}
+div#main div.search-results ul li dl dt{
+
+}
+div#main div.search-results ul li dl dd{
+}
+div#main div.search-results ul li p.bodyText{
+	margin:0.5em 0 2em 0;
+	font-size:80%;
+}
+div#main div.search-time{
+	text-align:right;
+	font-size:75%;
+}
+
+
+/**
+ * project-bbs
+ */
+div#main ul#project-bbs{
+	list-style-type:none;
+}
+div#main ul#project-bbs h4{
+	margin:2em 0 0.5em 0;
+	padding:0.3em 0.5em;
+	background:#eee;
+	border:solid #700;
+	border-width:0 0 0 5px;
+
+	
+}
+div#main ul#project-bbs span.subject{
+	font-weight:bold;
+	color:#700;
+}
+div#main ul#project-bbs span.userName{
+	margin-left:1em;
+	font-weight:normal;
+}
+div#main ul#project-bbs span.etime{
+	margin-left:1em;
+	font-weight:normal;
+	font-size:80%;
+	color:#966;
+}
+div#main ul#project-bbs p{
+	margin:0.5em 0 2em 1em;
+	font-size:80%;
+	}
+
+/*
+===================================================================================================
+ Sidebar
+---------------------------------------------------------------------------------------------------
+*/
+div#sidebar{
+	float:left;
+	width:15em;
+	margin-left:-100%;
+	background:#fff;
+}
+
+div#sidebar ul{
+	margin:1em;
+	border:solid #E6E6FA 1px;
+	background-color:#F5F5F5;
+	list-style-type:none;
+	padding:0.5em;
+}
+
+div#sidebar ul#projectlist li{
+	padding:0.2em 0 0.2em 0;
+	border:solid #E6E6FA;
+	border-width:1px 0 1px 0;
+	margin-top:-1px;
+	font-size:95%;
+}
+
+div#sidebar div#search{
+	margin:1em;
+	border:solid #E6E6FA 1px;
+	background-color:#F5F5F5;
+	padding:0.5em;
+}
+div#sidebar div#search form{
+	display:inline;
+}
+div#sidebar div#search input#q{
+	max-width:9em;
+}
+
+div#sidebar div#search span#option-box{
+	font-size:75%;
+}
+div#sidebar div#search input.textinput{
+	width:10em;
+	background:#000;
+}
+div#sidebar div#search input.submitbutton{
+	width:4em;
+}
+
+/*
+===================================================================================================
+ stylize Line
+---------------------------------------------------------------------------------------------------
+*/
+span.sl-asterisk{
+	font-weight:bold;
+	color:#700;
+}
+span.sl-gt{
+	color:#070;
+}
+span.sl-gt{
+	color:#070;
+}
+span.sl-vl{
+	color:#070;
+}
+span.sl-sharp{
+	color:#777;
+}
+span.sl-slash{
+	font-style: italic;
+}
+span.sl-minus{
+	color:#440;
+}
+span.sl-plus{
+	font-weight:bold;
+}
+
